@@ -1,24 +1,24 @@
 {
-  "name": "node-express-portfolio-site",
-  "version": "1.0.0",
-  "description": "Static Node.js and Express Portfolio Site",
-  "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "pug": "^2.0.4"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/johnhenry-2020/PORTFOLIO-SITE.git"
-  },
-  "author": "Joanthan J. Jolivette",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/johnhenry-2020/PORTFOLIO-SITE/issues"
-  },
-  "homepage": "https://github.com/johnhenry-2020/PORTFOLIO-SITE#readme"
+	"name": "node-express-portfolio-site",
+	"version": "1.0.0",
+	"description": "Static Node.js and Express Portfolio Site",
+	"main": "app.js",
+	"dependencies": {
+		"express": "^4.17.1",
+		"pug": "^2.0.4"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/johnhenry-2020/PORTFOLIO-SITE.git"
+	},
+	"author": "Joanthan J. Jolivette",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/johnhenry-2020/PORTFOLIO-SITE/issues"
+	},
+	"homepage": "https://github.com/johnhenry-2020/PORTFOLIO-SITE#readme"
 }
