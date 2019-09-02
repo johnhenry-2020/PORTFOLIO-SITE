@@ -1,22 +1,22 @@
-/* =============
-  dependencies
-================*/
+// =================
+// 	dependencies
+// =================
 const express = require('express');
 const projects = require('./data.json');
 
 const app = express();
-/* ===========
-  middleware
-==============*/
+// =================
+// 	middleware
+// =================
 app.set('views', './views');
 // set view engine to pug
 app.set('view engine', 'pug');
 // static route and the express.static method serving the static files located in the public folder
 app.use('/static', express.static('public'));
 
-/* =======
-  routes
-==========*/
+// =================
+// 	route handling
+// =================
 // index route, renders the "Home" page with the locals set to data.projects
 app.get('/', (req, res) => {
 	res.render('index', { projects: projects });
@@ -28,6 +28,21 @@ app.get('/about', (req, res) => {
 // projects routes, dynamic "project" routes based on the id of the project
 app.get('/projects', (req, res) => {
 	res.render('project');
+});
+
+// =================
+// 	error handling
+// =================
+app.use((req, res, next) => {
+	const err = new Error('Not Found');
+	err.status = 404;
+	console.log('404: Route Not Found');
+	next(err);
+});
+app.use((err, req, res, next) => {
+	res.locals.error = err;
+	res.render('error');
+	console.log(`Here is the source of the problem...${err.stack}`);
 });
 
 // =========
