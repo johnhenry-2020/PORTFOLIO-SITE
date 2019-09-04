@@ -37,7 +37,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
 	res.locals.error = err;
 	console.log('404: Route Not Found');
-	res.render('error');
+	res.render('error1');
 });
 
 // ======= dev server ===============

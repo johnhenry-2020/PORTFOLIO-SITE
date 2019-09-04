@@ -41,7 +41,7 @@
 			"project_name": "Employee Directory",
 			"description": "A static API project to learn about HTTP, XMLHttpRequest (XHR), AJAX, Fetch API, URI's and all that comes with it!",
 			"technologies": [ "HTML5", "HTTP", "AJAX", "XHR", "Fetch API", "CSS3", "JQuery" ],
-			"live_link": "https://johnhenry-2020.github.io/public-API-Requests/",
+			"live_link": "https://johnhenry-2020.github.io/Public-API-Requests/",
 			"github_link": "https://github.com/johnhenry-2020/public-API-Requests",
 			"image_urls": "/static/images/apiRequests"
 		},

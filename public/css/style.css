@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
 
 h1,
 h2,
@@ -11,10 +12,15 @@ p {
 }
 
 h5 {
-	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/* font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 2.5px;
 	-webkit-text-transform: uppercase;
 	text-transform: uppercase;
+}
+
+#my-info > div > div.cell.auto > h5 {
+	font-size: 1.62vh;
 }
 
 h6 {
@@ -80,7 +86,7 @@ a:hover {
 .portfolio-me p {
 	font-size: 14px;
 	color: #999;
-	font-family: 'Rock Salt', cursive;
+	/* font-family: 'Rock Salt', cursive; */
 }
 
 .portfolio-me a {
