@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+
 h1,
 h2,
 h3,
 h4,
 h5,
 p {
-	color: #ffffff;
-	font-family: 'Merriweather', serif;
+	font-family: 'Rock Salt', serif;
 }
 
 h5 {
@@ -16,7 +18,6 @@ h5 {
 }
 
 h6 {
-	color: #ffffff;
 	letter-spacing: 2.5px;
 	-webkit-text-transform: uppercase;
 	text-transform: uppercase;
@@ -25,7 +26,7 @@ h6 {
 
 p {
 	font-size: 15px;
-	color: #666;
+	color: #fff;
 }
 
 .round {
@@ -33,11 +34,17 @@ p {
 }
 
 .text-light {
-	color: #666;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#signature {
+	font-family: 'Rock Salt', cursive;
+	color: black;
 }
 
 .button {
-	background-color: #ffffff;
+	background-color: #333;
 }
 
 .button:hover {
@@ -45,7 +52,7 @@ p {
 }
 
 a {
-	color: #333;
+	color: #000;
 }
 
 a:hover {
@@ -55,6 +62,7 @@ a:hover {
 .image {
 	display: inline-block;
 	max-width: 100%;
+	width: 100%;
 	margin-bottom: 1rem;
 	border: solid 4px #fefefe;
 	border-radius: 0;
@@ -72,6 +80,7 @@ a:hover {
 .portfolio-me p {
 	font-size: 14px;
 	color: #999;
+	font-family: 'Rock Salt', cursive;
 }
 
 .portfolio-me a {
@@ -91,7 +100,7 @@ a:hover {
 .portfolio-breadcrumb {
 	margin: 0;
 	padding: 20px;
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid #eaeaea;
 }
 
 .portfolio-breadcrumb a {
@@ -109,7 +118,7 @@ a:hover {
 }
 
 .portfolio-intro p {
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid #eaeaea;
 	padding-bottom: 40px;
 }
 
@@ -131,8 +140,9 @@ a:hover {
 }
 
 .portfolio-index .cell h5 {
-	color: #ffffff;
+	color: #fff;
 	letter-spacing: 1px;
+	text-align: center; /* custom change */
 }
 
 .portfolio-meta {
@@ -145,62 +155,28 @@ a:hover {
 
 .portfolio-project p {
 	border: none;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .portfolio-project li {
 	font-size: 13px;
-	color: #555;
+	color: #fff;
 }
 
 .portfolio-bio {
 	line-height: 25px;
 }
 
-/* LEFT SIDEBAR */
-
-/* avatar */
-#my-info > div > div.cell.shrink > img {
-	top: -5vh;
-	padding-left: 2vh;
-	position: relative;
-}
-
-/* name */
-#my-info > div > div.cell.auto > h5 {
+/* custom error styles */
+.error h1 {
+	padding: 15px;
 	text-align: center;
-	font-size: 2.1vh;
 }
-
-/* description block*/
-#my-info > div > div.cell.auto {
-	top: -5vh;
-	position: relative;
+.error i.fa-question-circle {
+	font-size: 200px;
+	transform: translatex(225%);
 }
-
-/* LEFT SIDEBAR */
-
-/* skills list  */
-body
-	> div.off-canvas-content.has-reveal-left
-	> article
-	> div
-	> div.cell.portfolio-meta.small-6.medium-2.large-3
-	> ul.skills {
-	list-style: none;
-	margin-left: 1vh;
-}
-
-/* #skillsList {
-	color: #555 !important;
-} */
-
-/* contact info */
-body
-	> div.off-canvas-content.has-reveal-left
-	> article
-	> div
-	> div.cell.portfolio-meta.small-6.medium-2.large-3
-	> ul:nth-child(4) {
-	list-style: none;
-	margin-left: 1vh;
+.error i.fa-sad-tear {
+	font-size: 50px;
+	transform: translatex(200%);
 }

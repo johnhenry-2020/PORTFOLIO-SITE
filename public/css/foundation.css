@@ -500,7 +500,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background: #000;
+	background: #464647;
 	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	font-weight: normal;
 	line-height: 1.5;
@@ -623,6 +623,7 @@ textarea {
 	flex: 1 1 0px;
 }
 .cell.shrink {
+	margin-top: -8vh;
 	-ms-flex: 0 0 auto;
 	flex: 0 0 auto;
 }
@@ -3176,7 +3177,7 @@ a:focus {
 	color: #1468a0;
 }
 a img {
-	border: 0;
+	border: 3px solid #fff;
 }
 
 hr {
@@ -3204,7 +3205,8 @@ li {
 
 ul {
 	margin-left: 1.25rem;
-	list-style-type: disc;
+	/* list-style-type: disc; */
+	list-style: none;
 }
 
 ol {
@@ -3446,7 +3448,7 @@ ol.no-bullet {
 	text-align: center;
 	cursor: pointer;
 	background-color: #1779ba;
-	/* color: #fefefe; */
+	color: #fefefe;
 }
 [data-whatinput='mouse'] .button {
 	outline: 0;
@@ -4258,6 +4260,12 @@ select[multiple] {
 .form-error.is-visible {
 	display: block;
 }
+
+/* error stack message */
+body > div.off-canvas-content.has-reveal-left > div.grid-container.error > div:nth-child(2) > div.cell.large-8 > h2 > p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .accordion {
 	margin-left: 0;
@@ -6765,10 +6773,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 	display: inline-block;
 	max-width: 100%;
 	margin-bottom: 1rem;
-	/* box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2); */
-	line-height: 0;
-	/* padding-left: 4vh; */
-
+	margin-top: -2vh;
 }
 
 a.thumbnail {

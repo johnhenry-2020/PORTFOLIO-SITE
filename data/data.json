@@ -1,0 +1,65 @@
+{
+	"projects": [
+		{
+			"id": "0",
+			"project_name": "Random Quote Generator",
+			"description": "This project was an opportunity to learn JavaScripts fundamentals involving: Objects, Arrays and Loops which I utilized when creating a random quote generator.",
+			"technologies": [ "JavaScript", "HTML5", "CSS3" ],
+			"live_link": "https://johnhenry-2020.github.io/RandomQuoteGenerator/",
+			"github_link": "https://github.com/johnhenry-2020/RandomQuoteGenerator",
+			"image_urls": "/static/images/quoteGen"
+		},
+		{
+			"id": "1",
+			"project_name": "Student Directory",
+			"description": "This project was an opportunity to explore JavaScript ES6 principles more in depth. My work involved the manipulation of the DOM, some Debugging as well as CSS33",
+			"technologies": [ "JavaScript", "HTML5", "CSS3" ],
+			"live_link": "https://johnhenry-2020.github.io/PaginationPureJavascript/",
+			"github_link": "https://github.com/johnhenry-2020/PaginationPureJavascript",
+			"image_urls": "/static/images/pagination"
+		},
+		{
+			"id": "2",
+			"project_name": "Interactive Form",
+			"description": "Explored JavaScript's JQuery API and a dove into JavaScript conditionals principles to set up an interactive form",
+			"technologies": [ "JQuery", "JavaScript", "HTML5", "CSS3" ],
+			"live_link": "https://johnhenry-2020.github.io/InteractiveFormValidation/",
+			"github_link": "https://github.com/johnhenry-2020/InteractiveFormValidation",
+			"image_urls": "/static/images/form"
+		},
+		{
+			"id": "3",
+			"project_name": "Game Show App",
+			"description": "A project to learn Object Oriented Programming with JavaScript ECMA Script 6. <br> While also learning about Callbacks and other iteration methods.",
+			"technologies": [ "JavaScripts", "HTML5", "CSS3" ],
+			"live_link": "https://johnhenry-2020.github.io/Game-Show-App/",
+			"github_link": "https://github.com/johnhenry-2020/Game-Show-App",
+			"image_urls": "/static/images/phraseHunter"
+		},
+		{
+			"id": "4",
+			"project_name": "Employee Directory",
+			"description": "A static API project to learn about HTTP, XMLHttpRequest (XHR), AJAX, Fetch API, URI's and all that comes with it!",
+			"technologies": [ "HTML5", "HTTP", "AJAX", "XHR", "Fetch API", "CSS3", "JQuery" ],
+			"live_link": "https://johnhenry-2020.github.io/public-API-Requests/",
+			"github_link": "https://github.com/johnhenry-2020/public-API-Requests",
+			"image_urls": "/static/images/apiRequests"
+		},
+		{
+			"id": "5",
+			"project_name": "Express Flashcards App",
+			"description": "This project involved learning about Node JavaScript & Express JavaScript which was used to create a flash card experience.",
+			"technologies": [
+				"HTML5",
+				"HTTP",
+				"Node.js",
+				"Express.js",
+				"Node Package Manager (NPM)",
+				"CSS3",
+				"Pug Template Engine"
+			],
+			"github_link": "https://github.com/johnhenry-2020/EXPRESS-FLASHCARDS-APP",
+			"image_urls": "/static/images/flashcards"
+		}
+	]
+}

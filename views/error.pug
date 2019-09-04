@@ -1,26 +1,16 @@
-<!DOCTYPE html>
-  head
-    title Error 404
-    link(href='https://fonts.googleapis.com/css?family=Poppins:400,700' rel='stylesheet')
-    link(rel='stylesheet' href='static/css/error.css')
-    style(type='text/css').
-      @font-face { font-family: Byslexic; src: url('chrome-extension://ebobafleaeaancdaofchakjljljjkdfg/fonts/font.otf'); }
-  header
-    a(href='/')
-      img(id='backArrow' src='static/images/back.png' alt='back')
-    .divider
-    a(href='https://www.linkedin.com/in/jjjolivette')
-      img(src='static/images/linkedin.png' alt='Linkedin')
-    a(href='https://www.github.com/johnhenry-2020')
-      img( src='static/images/github.png' alt='Github')
-  main.main
-    .error 404
-    #imgContainer2(style='width: 100%; height: 100%; transform-origin: 0px 0px 0px;')
-      //- img(src='static/images/broken-link-error-page.gif' alt='404 Error Animaton of Caveman playing with cables and shocking self.')
-      img(src="static/images/broken-link.png", alt="")
-    include errorMessage.pug
-    h6
-      | Somthing Went Wrong,
-      br
-      | Please Try Again or Return Home
-    a.button(href='/') Return Home
+extends layout.pug
+
+block content
+  .grid-container.error
+      .grid-x
+        .cell
+          i.far.fa-question-circle
+          hr
+          h1.error= error.message
+      .grid-x
+        .cell.large-4
+          h2 Looks like this issue is a #{error.status}
+          i.far.fa-sad-tear
+        .cell.large-8
+          h2 This issue is found at:
+            p= error.stack
