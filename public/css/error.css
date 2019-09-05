@@ -1,6 +1,10 @@
 /**********************************/
 /******* General Styles *******/
 /**********************************/
+@font-face {
+	font-family: Byslexic;
+	src: url('chrome-extension://ebobafleaeaancdaofchakjljljjkdfg/fonts/font.otf');
+}
 body,
 html {
 	margin: 0px;

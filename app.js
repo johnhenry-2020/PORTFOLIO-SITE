@@ -28,6 +28,12 @@ app.get('/projects/:id', (req, res) => {
 	res.locals.project = projects.filter((proj) => proj.id === req.params.id)[0];
 	res.render('project');
 });
+
+// error details button
+app.get('/errorDetails', (req, res) => {
+	res.render('errorDetails');
+});
+
 // ========= error handling ==============
 app.use((req, res, next) => {
 	const err = new Error('Not Found');
@@ -37,12 +43,6 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
 	res.locals.error = err;
 	console.log('404: Route Not Found');
-	res.render('error1');
-	res.render('error');
-});
-
-// error details
-app.get('/error', (req, res) => {
 	res.render('error');
 });
 
