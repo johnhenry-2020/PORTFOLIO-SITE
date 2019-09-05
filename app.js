@@ -38,6 +38,12 @@ app.use((err, req, res, next) => {
 	res.locals.error = err;
 	console.log('404: Route Not Found');
 	res.render('error1');
+	res.render('error');
+});
+
+// error details
+app.get('/error', (req, res) => {
+	res.render('error');
 });
 
 // ======= dev server ===============
