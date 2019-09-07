@@ -47,4 +47,5 @@ app.use((err, req, res, next) => {
 });
 
 // ======= dev server ===============
-app.listen(3000, () => console.log('Running locally on port 3000'));
+// setup port number to run via Heroku port but if running locally than it can be run via localhost:3000
+app.listen(process.env.PORT || 3000);
