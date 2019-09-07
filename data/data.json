@@ -58,7 +58,7 @@
 				"CSS3",
 				"Pug Template Engine"
 			],
-			"live_link": "https: //express-flashcards-jj/",
+			"live_link": "https://node-express-flashcard-app-jj.herokuapp.com",
 			"github_link": "https://github.com/johnhenry-2020/EXPRESS-FLASHCARDS-APP",
 			"image_urls": "/static/images/flashcards"
 		}
